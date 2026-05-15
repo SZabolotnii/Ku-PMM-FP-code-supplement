@@ -69,7 +69,13 @@ Reads the stored Monte Carlo summary and writes `tab_mc_*.{csv,tex}` to `results
 
 ## Re-running Monte Carlo (optional)
 
-Full Monte Carlo re-runs require the in-development `EstemPMM` R package (branch `feature/fp`, v0.3.0). This package is not yet on CRAN. The stored `data/mc_matched_summary.csv` replicates all paper tables without re-running.
+Full Monte Carlo re-runs require the `EstemPMM` R package (v0.3.2, available on CRAN):
+
+```r
+install.packages("EstemPMM")
+```
+
+The stored `data/mc_matched_summary.csv` replicates all paper tables without re-running.
 
 ---
 
@@ -82,7 +88,7 @@ install.packages("mfp")
 data(GBSG, package = "mfp")
 ```
 
-The stored outputs in `data/gbsg_20260512/` (predictions, residual summaries, bootstrap g2 estimates) replicate the paper's §5.2 claims. Re-running the full analysis requires `EstemPMM`.
+The stored outputs in `data/gbsg_20260512/` (predictions, residual summaries, bootstrap g2 estimates) replicate the paper's §5.2 claims. Re-running the full analysis requires `EstemPMM` (v0.3.2, CRAN).
 
 ---
 
@@ -92,7 +98,7 @@ The stored outputs in `data/gbsg_20260512/` (predictions, residual summaries, bo
 |------|--------|
 | Hubin et al. fish-nutrition data | No public repository; manuscript makes no replication claim |
 | PATP arXiv identifier | Preprint under processing at submission time |
-| Full Monte Carlo R harness | Requires in-development EstemPMM package |
+| Full Monte Carlo R harness | Requires EstemPMM v0.3.2 (CRAN) |
 
 ---
 
