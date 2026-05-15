@@ -1,0 +1,10 @@
+# Lean build artifacts
+lean/.lake/
+lean/lake-manifest.json
+
+# R artifacts
+*.Rhistory
+.Rdata
+
+# macOS
+.DS_Store
